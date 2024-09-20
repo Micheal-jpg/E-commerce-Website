@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background: lightskyblue;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .ecommerce-nav img{
+    margin-left: 20px;
+}
+
+.nav-home{
+    display: flex;
+    align-items: center;
+}
+
+.nav-home ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.nav-home ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+}
+
+.ecommerce-search{
+    display: flex;
+    gap: 5px;
+}
+.ecommerce-search input{
+    font-size: 15px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px lightgray;
+    outline: none;
+    padding: 10px;
+}
+
+.ecommerce-search .nav-btn{
+    padding: 10px;
+    background: lightskyblue;
+    outline: 0;
+    border: 1px solid#222;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
