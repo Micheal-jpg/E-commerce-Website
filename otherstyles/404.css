@@ -1,0 +1,90 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Animation for the 404 text */
+.animate-404 {
+    font-size: 120px;
+    color: #333;
+    margin-bottom: 20px;
+    animation: scaleUp 1.5s ease-in-out forwards;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animation for the whole container */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.error-content p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 0.5s; /* Delays text appearance */
+}
+
+/* Button styles */
+.home-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 1s; /* Delays button appearance */
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Adds hover scaling effect */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .animate-404 {
+        font-size: 80px;
+    }
+    
+    .error-content p {
+        font-size: 16px;
+    }
+    
+    .home-button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}

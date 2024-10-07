@@ -4,31 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>About Us</title>
+    <link rel="stylesheet" href="otherstyles/home.css">
+    <link rel="stylesheet" href="otherstyles/About Us.css">
+    <script src="https://kit.fontawesome.com/be4521645b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/head-logo.png" type="image/x-icon">
+    <title>Apni Dukaan</title>
 </head>
 <body>
-    <nav>
-        <div class="ecommerce-nav">
-            <img src="images/ApniDukan.png" class="logo" width="80px" >
-        </div>
-         <div class="nav-home">
-        <ul>
+  <a href="#" class="back-to-top" id="backToTopBtn"><img src="images/up-arrow.png" width="25px"></a>
+  <nav>
+    <div class="ecommerce-nav">
+      <a href="index.html"><img src="images/ApniDukan.png" class="logo" width="80px"></a>
+        <!-- Menu Icon for Smaller Devices -->
+        <button class="menu-icon" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="nav-home" id="nav-home">
+        <ul id="nav-links">
+            <!-- All existing links here -->
             <li><a href="home.html">Home</a></li>
-               <li><a href="offers.html">Offers</a></li>
-               <li><a href="Contact Us.html">Contact Us</a></li>
-               <li><a href="Login.html">Login</a></li>
-               <li><a href="About Us.html">About Us</a></li>
-               <li><a href="FAQ.html">FAQ</a></li>
-               <li><a href="Category.html">Category</a></li>
-               <li><a href="My Cart.html">My Cart</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li class="category-dropdown">
+                <a href="Category.html" class="dropdown-toggle">
+                    Category
+                    <img src="images/angle-small-down.png" width="15px" alt="dropdown arrow">
+                </a>
+                <!-- Dropdown content -->
+                <div class="category-nav-Dropdown">
+                    <ul>
+                        <li><a class="categoryDropDown" href="Mobile.html">Mobile</a></li>
+                        <li><a class="categoryDropDown" href="Books.html">Books</a></li>
+                        <li><a class="categoryDropDown" href="404.html">TV/Appliances</a></li>
+                        <li><a class="categoryDropDown" href="404.html">Furniture</a></li>
+                        <li><a class="categoryDropDown" href="404.html">Baby/Kids</a></li>
+                        <li><a class="categoryDropDown" href="404.html">Stationery</a></li>
+                        <hr>
+                        <li><a class="categoryDropDown" href="Login.html">Login/Signup</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="My Cart.html">My Cart</a></li>
         </ul>
-        <div class="ecommerce-search">  
+        <div class="ecommerce-search">
             <input type="text" placeholder="Search">
             <button type="submit" class="nav-btn">Search</button>
         </div>
     </div>
-   
 </nav>
+
+<!---------------------------------------------- About-Us Section -------------------------------------------->
+
+  <div class="about-us-container">
+    <div class="about-us-head">
+      <img class="third" src="images/AboutUsBanner.jpg">
+      <h1>ABOUT US</h1>
+    </div>
+    <div class="about-us-content">
+      <P>--WHO WE ARE AND WHAT WE DO--</P>
+      <P>ApniDukaan.com is an E-commerce company that started in 2020
+        ApniDukaan is guided by four principles: customer obsession 
+        rather than competitor focus, passion for invention, commitment
+        to operational excellence, and long-tterm thinking. We strive
+        to have a positive impact on customers, employees, small business, 
+        the economy, and the communities where we're located.   
+      </P>
+      </div>
+
+
+      <div class="about-us-info">
+        <h1 class="about-us-h1">ApniDukaan <br> Cares</h1>
+        <p>ApniDukaanWale is a smart, passionate builder with 
+          different backgrounds and goals, who share a common 
+          desire to always be learning and inventing on behalf 
+          of our customers. We believe that  if you're not left 
+          with an amazing experience, we haven't done our job. 
+          We don't measure success through achievements or awards,
+          but through the satisfaction of our customers.</p>
+      </div>
+
+      
+      <div class="about-us-info about-p">
+        <p class="about-us-p">In ApniDukaan, there is a wide range of options in the
+           category, exclusively handpicked to help you find the 
+           best quality with the lowest prices. No more getting 
+           stuck in traffic jams, the order will be delivered right 
+           to your doorstep. We guarantee on-time delivery and the 
+           best quality! Shopping online is now easy as every product
+            on your shopping list is available at ApniDukaan.com</p>
+            <h1>Why Choose <br> Us</h1>
+      </div>
+ 
+<!---------------------------------------- About-us Flip-card ------------------------------------>
+<div class="about-us-flip-card-container">
+  <div class="about-us-flip-card">
+    <h1>--What We Provide--</h1>
+  </div>
+
+  <div class="flip-container">
+    <!-- Flip Card 1 -->
+    <div class="flip-card">
+      <div class="flip-card-front">
+        <img src="images/sales.png" class="flip-one" width="230px" alt="Sales">
+      </div>
+      <div class="flip-card-back">
+        <h1>Best Prices & Offers</h1>
+        <p>We provide the best value for money. We also specials on 
+          every weekend and special occasions. You can get the best 
+          quality products at the lowest prices at ApniDukaan.com</p>
+      </div>
+    </div>
+
+    <!-- Flip Card 2 -->
+    <div class="flip-card flip-two">
+      <div class="flip-card-front">
+        <img src="images/satisfy.png" width="250px"  alt="Customer Satisfaction">
+      </div>
+      <div class="flip-card-back">
+        <h1>Satisfaction Guarantee</h1> 
+        <p>If you are not satisfied with any of our products 
+          for a valid reason, we will be more than happy to 
+          refund/replace those products for you (terms and 
+          conditions applied).</p>
+      </div>
+    </div>
+
+    <!-- Flip Card 3 -->
+    <div class="flip-card">
+      <div class="flip-card-front">
+        <img src="images/DeliveryService.png" class="flip-three" width="250px" alt="Delivery Service">
+      </div>
+      <div class="flip-card-back">
+        <h1>Delivery Service</h1> 
+        <p>We also deliver multiple days a week in most areas.
+          No more stucking in the traffic jams! The products 
+          will be delivered to your doorsteps</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+ <!-------------------------------------------- Footer -------------------------------------------->
+ <div class="footer-container">
+  <div class="footer-section">
+  <div class="footer-layer">
+    <div class="footer-info">
+      <h1>GET TO KNOW US</h1>
+      <p>About Us</p>
+      <p>Careers</p>
+      <p>Press Release</p>
+      <p>Apni Dukaan Cares</p>
+      <p>Our Partners</p>
+    </div>
+  </div>
+
+  <div class="footer-layer">
+    <div class="footer-info">
+      <h1>LET US HELP YOU</h1>
+      <p>Payments</p>
+      <p>Shipping</p>
+      <p>Cancellation and Returns</p>
+      <p>Report an issue</p>
+      <p>Contact us</p>
+    </div>
+  </div>
+
+  <div class="footer-layer">
+    <div class="footer-info">
+      <h1>PRIVACY POLICY</h1>
+      <p>About Us</p>
+      <p>Careers</p>
+      <p>Press Release</p>
+      <p>Terms and Conditions</p>
+      <p>Refund and Return</p>
+    </div>
+  </div>
+
+  <div class="footer-layer">
+    <div class="footer-info">
+      <h1>MAKE MONEY WITH</h1>
+      <p>Sell on Apni Dukaan</p>
+      <p>Advertise your products</p>
+      <p>Press Release</p>
+      <p>Become our partner</p>
+      <p>Join our mission</p>
+    </div>
+  </div>
+
+  <div class="footer-layer">
+    <div class="footer-info social">
+      <h1>CONNECT WITH US</h1>
+      <p><img src="images/facebook.png" width="25px">
+      <span><a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">Facebook</a></span>
+      </p>
+      <p><img src="images/twitter.png" width="25px">
+      <span><a href="https://x.com/" target="_blank">Twitter</a></span>
+      </p>
+      <p><img src="images/instagram.png" width="25px">
+      <span><a href="https://www.instagram.com/" target="_blank">Instagram</a></span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="copyright">
+  <p>Copyright Since 2024 Under ApniDukaan.com 
+  | Adeyanju Micheal</p>
+</div>
+</div>
+
+
     <script src="script.js"></script>
 </body>
 </html>

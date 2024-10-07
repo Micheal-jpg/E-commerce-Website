@@ -1,0 +1,142 @@
+html,
+body{
+    overflow-x: hidden;
+}
+
+.book-head{
+    text-align: center;
+    margin: 50px;
+}
+
+.book-head h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: #313030;
+}
+
+.book-head-animate p {
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+    display: inline-block; /* Inline block to animate properly */
+    animation-name: animation;
+    animation-duration: 15s; /* Adjust timing as needed */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; /* Keep the movement constant */
+}
+
+@keyframes animation {
+    from {
+        transform: translateX(230%); /* Start from outside the right */
+    }
+
+    to {
+        transform: translateX(-100%); /* Move fully outside the left */
+    }
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    perspective: 2000px; /* Perspective to enable 3D flip effect */
+    row-gap: 50px;
+    padding: 0 50px;
+    margin: 80px 2%;
+    
+}
+
+.book-flip {
+  margin: 0 10%;
+  width: 350px;
+  height: 350px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border: 4px solid #12128d;
+  border-radius: 13px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 100, 0.8);
+
+}
+
+.book-flip:hover{
+  transform: rotateY(180deg); /* Flips the card */
+  border: 0;
+  cursor: pointer;
+}
+
+.book-layer, .book-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Ensures the back is hidden when flipped */
+  border-radius: 10px;
+}
+
+/* Front side (image side) */
+.book-layer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Back side (text side) */
+.book-info {
+  background-color: #6abad4;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+  transform: rotateY(180deg); /* Ensures the back is properly hidden */
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.book-info h1{
+  text-align: center;
+}
+
+.book-info p {
+  margin: 10px 0;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.book-info button{
+  margin: -5px 230px;
+  text-align: center;
+  padding: 10px;
+  width: 75px;
+  font-size: 20px;
+  background: #12128d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}  
+
+@media (max-width : 900px){
+  .book-head h1{
+    font-size: 25px;
+  }
+
+  .book-head-animate p{
+    font-size: 16px;
+    animation-duration: 10s;
+  }
+
+  @keyframes animation{
+    from{
+      transform: translateX(110%);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+  }
+
+  .book-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 80px -15%;
+  }
+}

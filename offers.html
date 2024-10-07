@@ -4,31 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Offers</title>
+    <link rel="stylesheet" href="otherstyles/home.css">
+    <link rel="stylesheet" href="otherstyles/offers.css">
+    <script src="https://kit.fontawesome.com/be4521645b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/head-logo.png" type="image/x-icon">
+    <title>Apni Dukaan</title>
 </head>
 <body>
-    <nav>
-        <div class="ecommerce-nav">
-            <img src="images/ApniDukan.png" class="logo" width="80px" >
-        </div>
-         <div class="nav-home">
-        <ul>
+  <a href="#" class="back-to-top" id="backToTopBtn"><img src="images/up-arrow.png" width="25px"></a>
+  <nav>
+    <div class="ecommerce-nav">
+        <a href="index.html"><img src="images/ApniDukan.png" class="logo" width="80px"></a>
+        <!-- Menu Icon for Smaller Devices -->
+        <button class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <div class="nav-home" id="nav-home">
+        <ul id="nav-links">
+            <!-- All existing links here -->
             <li><a href="home.html">Home</a></li>
             <li><a href="offers.html">Offers</a></li>
             <li><a href="Contact Us.html">Contact Us</a></li>
             <li><a href="Login.html">Login</a></li>
             <li><a href="About Us.html">About Us</a></li>
             <li><a href="FAQ.html">FAQ</a></li>
-            <li><a href="Category.html">Category</a></li>
+            <li class="category-dropdown">
+                <a href="Category.html" class="dropdown-toggle">
+                    Category
+                    <img src="images/angle-small-down.png" width="15px" alt="dropdown arrow">
+                </a>
+                <!-- Dropdown content -->
+                <div class="category-nav-Dropdown">
+                    <ul>
+                        <li><a class="categoryDropDown" href="Mobile.html">Mobile</a></li>
+                        <li><a class="categoryDropDown" href="Books.html">Books</a></li>
+                        <li><a class="categoryDropDown" href="404.html">TV/Appliances</a></li>
+                        <li><a class="categoryDropDown" href="404.html">Furniture</a></li>
+                        <li><a class="categoryDropDown" href="404.html">Baby/Kids</a></li>
+                        <li><a class="categoryDropDown" href="404.html">Stationery</a></li>
+                        <hr>
+                        <li><a class="categoryDropDown" href="Login.html">Login/Signup</a></li>
+                    </ul>
+                </div>
+            </li>
             <li><a href="My Cart.html">My Cart</a></li>
         </ul>
-        <div class="ecommerce-search">  
+        <div class="ecommerce-search">
             <input type="text" placeholder="Search">
             <button type="submit" class="nav-btn">Search</button>
         </div>
     </div>
-   
 </nav>
+
+
+<!-------------------------------------------------- Offers-section --------------------------------------------------------->
+  <div class="offer-scroll">
+  <div class="offer-container">
+    <div class="offer-layer">
+      <div class="offer-deal">
+        <h1>DEALS OF THE DAY</h1>
+      </div>
+
+      <div class="offer-deal-container">
+        <div class="offer-deal-content">
+          <div class="circle"></div>
+          <h1>SHOP</h1>
+          <p class="conditions">Up to 50% <br>off</p>
+          <div class="deals">
+          <p>Get Upto 50% off. On Shopping of ₦10000 and above!</p>
+          <p>Conditions and Restrictions apply</p>
+          </div>
+          <a href="404.html"><button>Available Now</button></a>
+        </div>
+
+        <div class="offer-deal-content">
+          <div class="circle esaver-circle"></div>
+          <h1>ESAVER</h1>
+          <p class="conditions esaver">Up to 75% <br>off</p>
+          <div class="deals">
+          <p>Ranging From 10% to 75% Mega discount on 
+            all Electronic Appliances.</p>
+          <p>Conditions and Restrictions apply</p>
+          </div>
+          <a href="404.html"><button>Available Now</button></a>
+        </div>
+
+        <div class="offer-deal-content">
+          <div class="circle disney-circle"></div>
+          <h1>DISNEY</h1>
+          <p class="conditions disney">Paid trip to disney land </p>
+          <div class="deals">
+          <p>Win A Trip To Disney Land HongKong! 
+            On Shopping of  ₦30000</p>
+          <p>Conditions and Restrictions apply</p>
+          </div>
+          <a href="404.html"><button>Available Now</button></a>
+        </div>
+
+
+        <div class="offer-deal-content">
+          <div class="circle brand-circle"></div>
+          <h1>BRAND</h1>
+          <p class="conditions brand">Up to 75% <br>off</p>
+          <div class="deals">
+          <p>Get Upto 75% Off On Shopping products from 
+            Selected Brands!</p>
+          <p>Conditions and Restrictions apply</p>
+          </div>
+          <a href="404.html"><button>Available Now</button></a>
+        </div>
+
+        <div class="offer-deal-content">
+          <div class="circle diary-circle"></div>
+          <h1>DAIRY</h1>
+          <p class="conditions diary">Flat 30% <br> off</p>
+          <div class="deals">
+          <p> Get Flat 30% off! On shopping of all 
+            dairy products above ₦500!</p>
+          <p>Conditions and Restrictions apply</p>
+          </div>
+          <a href="404.html"><button>Available Now</button></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+      <!-------------------------------------------- Footer -------------------------------------------->
+      <div class="footer-container">
+        <div class="footer-section">
+        <div class="footer-layer">
+          <div class="footer-info">
+            <h1>GET TO KNOW US</h1>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Press Release</p>
+            <p>Apni Dukaan Cares</p>
+            <p>Our Partners</p>
+          </div>
+        </div>
+
+        <div class="footer-layer">
+          <div class="footer-info">
+            <h1>LET US HELP YOU</h1>
+            <p>Payments</p>
+            <p>Shipping</p>
+            <p>Cancellation and Returns</p>
+            <p>Report an issue</p>
+            <p>Contact us</p>
+          </div>
+        </div>
+
+        <div class="footer-layer">
+          <div class="footer-info">
+            <h1>PRIVACY POLICY</h1>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Press Release</p>
+            <p>Terms and Conditions</p>
+            <p>Refund and Return</p>
+          </div>
+        </div>
+
+        <div class="footer-layer">
+          <div class="footer-info">
+            <h1>MAKE MONEY WITH</h1>
+            <p>Sell on Apni Dukaan</p>
+            <p>Advertise your products</p>
+            <p>Press Release</p>
+            <p>Become our partner</p>
+            <p>Join our mission</p>
+          </div>
+        </div>
+
+        <div class="footer-layer">
+          <div class="footer-info social">
+            <h1>CONNECT WITH US</h1>
+            <p><img src="images/facebook.png" width="25px">
+            <span><a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">Facebook</a></span>
+            </p>
+            <p><img src="images/twitter.png" width="25px">
+            <span><a href="https://x.com/" target="_blank">Twitter</a></span>
+            </p>
+            <p><img src="images/instagram.png" width="25px">
+            <span><a href="https://www.instagram.com/" target="_blank">Instagram</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright Since 2024 Under ApniDukaan.com 
+        | Adeyanju Micheal</p>
+      </div>
+      </div>
 
     <script src="script.js"></script>
 </body>

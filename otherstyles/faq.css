@@ -1,0 +1,79 @@
+body{
+    background: #63606059;
+}
+.faq-container {
+    max-width: 950px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .faq-head h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    border-bottom: 1px solid rgb(105, 105, 105);
+  }
+  
+  .faq-content {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Styling for the question (first p) */
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+   
+  }
+  
+  .faq-question p {
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+  }
+  
+  /* Arrow and icon spacing */
+  .arrow {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .icon-toggle {
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+  
+  /* The hidden answer section */
+  .faq-answer {
+    display: none;
+    padding-top: 10px;
+  }
+  
+  .faq-answer p {
+    text-align: center;
+    padding: 0 30px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #050505;
+  }
+  
+  /* Add transition and flip icons on toggle */
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .plus.open {
+    content: "-";
+ }
+  
+  

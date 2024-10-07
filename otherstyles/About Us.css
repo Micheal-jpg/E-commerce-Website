@@ -1,0 +1,206 @@
+.about-us-container{
+    margin: 50px 250px;
+    padding: 20px;
+}
+
+.about-us-head{
+    position: relative;
+    padding: 10px 0;
+}
+
+.about-us-head h1{
+    position: absolute;
+    top: 45%;
+    right: 40%;
+    font-size: 50px;
+    text-shadow:  5px 2px 5px rgba(0, 0, 100, 0.8);
+}
+
+.about-us-content{
+    margin: 20px;
+}
+
+.about-us-content p:nth-child(1){
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-us-content p:nth-child(2){
+    font-size: 25px;
+    color: rgb(121, 112, 112);
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.about-us-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 10px;
+    padding: 30px;
+    cursor: default;
+}
+
+.about-us-info h1{
+    text-align: center;
+    position: relative;
+    color: #12128d;
+    font-weight: 800;
+}
+
+.about-us-info .about-us-h1:after{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 150px;
+    left: 110%;
+    top: -40px;
+    background: #12128d;
+}
+
+.about-us-info p{
+    font-size: 20px;
+    text-align: justify;
+    color: #797070;
+    position: relative;
+}
+
+.about-us-info .about-us-p::after{
+    position: absolute;
+    content: '';
+    background: #12128d;
+    width: 5px;
+    height: 150px;
+    height: 150px;
+    left: 103%;
+    top: -20px;
+}
+
+.about-us-info:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 13px rgba(0, 0, 100, 0.8);
+}
+
+.about-us-flip-card-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.about-us-flip-card h1 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Container for all flip cards */
+.flip-container {
+  display: flex;
+  justify-content: space-around; /* Spread out the cards */
+  flex-wrap: wrap;
+  perspective: 2000px; /* Perspective to enable 3D flip effect */
+  gap: 20px; /* Adds space between the cards */
+}
+
+.flip-card {
+  padding: 20px 0;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border: 4px solid #12128d;
+  box-shadow: 0px 0px 8px rgba(0, 0, 100, 0.8);
+}
+
+.flip-card:hover{
+  transform: rotateY(180deg); /* Flips the card */
+  border: 0;
+  cursor: pointer;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Ensures the back is hidden when flipped */
+}
+
+.flip-card-back {
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 20px;
+  padding: 5px;
+  margin: -20px 0;
+  transform: rotateY(180deg); 
+  border-radius: 10px;
+}
+
+.flip-card-back p {
+  font-size: 18px;
+  font-weight: bold;
+}
+  
+@media (max-width :900px){
+  .about-us-container{
+    margin: 0;
+  }
+
+  .third{
+    margin: 0 40px;
+    width: 300px;
+  }
+
+  .about-us-head h1{
+    font-size: 25px;
+    transform: translateX(25%);
+    margin-top: -10px;
+  }
+  .about-us-content{
+    margin: 0;
+  }
+
+  .about-us-content p:nth-child(1){
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .about-us-content p:nth-child(2){
+    font-size: 15px;
+    text-align: start;
+  }
+
+  .about-us-info{
+    flex-wrap: wrap;
+  }
+
+  .about-us-info .about-us-h1:after{
+    display: none;
+  }
+
+  .about-us-info h1{
+    width: 300px;
+    margin-bottom: -30px;
+  }
+
+  .about-us-info p{
+    text-align: start;
+    font-size: 20px;
+  }
+
+  .about-p {
+    display: none;
+  }
+
+  .about-us-info:hover{
+    transform: scale(1);
+    border: 0;
+    box-shadow: none;
+  }
+
+  .flip-card-back p{
+    padding: 30px 0;
+    font-size: 18px;
+  }
+}

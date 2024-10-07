@@ -4,31 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="otherstyles/home.css">
+    <link rel="stylesheet" href="otherstyles/contact us.css">
+    <script src="https://kit.fontawesome.com/be4521645b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/head-logo.png" type="image/x-icon">
+    <title>Apni Dukaan</title>
 </head>
 <body>
-    <nav>
-        <div class="ecommerce-nav">
-            <img src="images/ApniDukan.png" class="logo" width="80px" >
-        </div>
-         <div class="nav-home">
-        <ul>
+  <a href="#" class="back-to-top" id="backToTopBtn"><img src="images/up-arrow.png" width="25px"></a>
+  <nav>
+    <div class="ecommerce-nav">
+      <a href="index.html"><img src="images/ApniDukan.png" class="logo" width="80px"></a>
+        <!-- Menu Icon for Smaller Devices -->
+        <button class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <div class="nav-home" id="nav-home">
+        <ul id="nav-links">
+            <!-- All existing links here -->
             <li><a href="home.html">Home</a></li>
             <li><a href="offers.html">Offers</a></li>
             <li><a href="Contact Us.html">Contact Us</a></li>
             <li><a href="Login.html">Login</a></li>
             <li><a href="About Us.html">About Us</a></li>
             <li><a href="FAQ.html">FAQ</a></li>
-            <li><a href="Category.html">Category</a></li>
+            <li class="category-dropdown">
+                <a href="Category.html" class="dropdown-toggle">
+                    Category
+                    <img src="images/angle-small-down.png" width="15px" alt="dropdown arrow">
+                </a>
+                <!-- Dropdown content -->
+                <div class="category-nav-Dropdown">
+                    <ul>
+                        <li><a class="categoryDropDown" href="Mobile.html">Mobile</a></li>
+                        <li><a class="categoryDropDown" href="Books.html">Books</a></li>
+                        <li><a class="categoryDropDown" href="404.html">TV/Appliances</a></li>
+                        <li><a class="categoryDropDown" href="404.html">Furniture</a></li>
+                        <li><a class="categoryDropDown" href="404.html">Baby/Kids</a></li>
+                        <li><a class="categoryDropDown" href="404.html">Stationery</a></li>
+                        <hr>
+                        <li><a class="categoryDropDown" href="Login.html">Login/Signup</a></li>
+                    </ul>
+                </div>
+            </li>
             <li><a href="My Cart.html">My Cart</a></li>
         </ul>
-        <div class="ecommerce-search">  
+        <div class="ecommerce-search">
             <input type="text" placeholder="Search">
             <button type="submit" class="nav-btn">Search</button>
         </div>
     </div>
-   
 </nav>
+
+<!------------------------------------------ Contact us ------------------------------------------>
+
+<div class="contact-us-container">
+  <div class="contact-us-head">
+    <h1>CONTACT US</h1>
+    <p>Do you have any questions? Please do not hesitate to 
+      contact us directly. Our team will come back to you 
+      within a matter of hours to help you.</p>
+  </div>
+
+
+  <div class="contact-us-info">
+  <!---------------------------------------- right-column ---------------------------------------->
+
+  <div class="left-col">
+    <form action="https://formspree.io/f/xjkbzaok">
+      <label for="name">Your Name :</label>
+      <input type="text" name="name" placeholder="Enter your name" 
+      required
+      >
+      <label for="email">Your Email :</label>
+      <input type="email" name="email" placeholder="Enter your email address" 
+      required
+      >
+      <label for="message">Message :</label>
+      <textarea name="message" id="textarea" rows="5" 
+      placeholder="Enter your message here ..." required
+      ></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+
+  <!---------------------------------------- right-column ---------------------------------------->
+  
+  <div class="right-col">
+    <div class="right-col-info">
+      <a href=""><img src="images/marker.png" width="25px">
+        Mafoluku
+      Oshodi,Branch</a>
+      <a href=""><img src="images/envelope.png" width="25px">
+      info@apnidukaan.com</a>
+      <a href=""><img src="images/phone-call.png" width="25px">
+      08145636375</a>
+      <a href=""><img src="images/phone-rotary.png" width="25px">
+      08105096061</a>
+    </div>
+    <div class="right-col-social">
+      <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><img src="images/facebook (2).png"></a>
+      <a href="https://www.linkedin.com/login" target="_blank"><img src="images/linkedin.png"></a>
+      <a href="https://x.com/" target="_blank"><img src="images/twitter (2).png" ></a>
+      <a href="https://github.com/login" target="_blank"><img src="images/github.png" ></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram (1).png"></a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-------------------------------------------- Footer -------------------------------------------->
+    <div class="footer-container">
+      <div class="footer-section">
+      <div class="footer-layer">
+        <div class="footer-info">
+          <h1>GET TO KNOW US</h1>
+          <p>About Us</p>
+          <p>Careers</p>
+          <p>Press Release</p>
+          <p>Apni Dukaan Cares</p>
+          <p>Our Partners</p>
+        </div>
+      </div>
+
+      <div class="footer-layer">
+        <div class="footer-info">
+          <h1>LET US HELP YOU</h1>
+          <p>Payments</p>
+          <p>Shipping</p>
+          <p>Cancellation and Returns</p>
+          <p>Report an issue</p>
+          <p>Contact us</p>
+        </div>
+      </div>
+
+      <div class="footer-layer">
+        <div class="footer-info">
+          <h1>PRIVACY POLICY</h1>
+          <p>About Us</p>
+          <p>Careers</p>
+          <p>Press Release</p>
+          <p>Terms and Conditions</p>
+          <p>Refund and Return</p>
+        </div>
+      </div>
+
+      <div class="footer-layer">
+        <div class="footer-info">
+          <h1>MAKE MONEY WITH</h1>
+          <p>Sell on Apni Dukaan</p>
+          <p>Advertise your products</p>
+          <p>Press Release</p>
+          <p>Become our partner</p>
+          <p>Join our mission</p>
+        </div>
+      </div>
+
+      <div class="footer-layer">
+        <div class="footer-info social">
+          <h1>CONNECT WITH US</h1>
+          <p><img src="images/facebook.png" width="25px">
+          <span><a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">Facebook</a></span>
+          </p>
+          <p><img src="images/twitter.png" width="25px">
+          <span><a href="https://x.com/" target="_blank">Twitter</a></span>
+          </p>
+          <p><img src="images/instagram.png" width="25px">
+          <span><a href="https://www.instagram.com/" target="_blank">Instagram</a></span>
+          </p>
+        </div>
+      </div>
+    </div> 
+
+<div class="copyright">
+  <p>Copyright Since 2024 Under ApniDukaan.com 
+  | Adeyanju Micheal</p>
+</div>
+</div>
 
     <script src="script.js"></script>
 </body>

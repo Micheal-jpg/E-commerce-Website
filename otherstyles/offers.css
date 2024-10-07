@@ -1,0 +1,128 @@
+.offer-layer{
+    margin: 10px 10%;   
+}
+
+.offer-deal{
+    text-align: center;
+    font-size: 30px;
+    color: #8792fa;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+    padding: 5% 0;
+}
+
+.offer-deal-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    margin-bottom: 90px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 0, 0, 0.575);
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+.offer-deal-content{
+   border-radius: 15px;
+   background: lightgray;
+   width: 320px;
+   position: relative;
+}
+
+.offer-deal-content h1{
+    font-size: 50px;
+    color: #8f87fa;
+    padding: 30px 2%;
+    text-align: center;
+}
+
+.conditions{   
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffff00ce;
+    background-color: red;
+    padding: 80px 0;
+    padding-top: 10px;
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 20% 76%, 10% 88%, 0% 75%);
+}
+
+.deals p{
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.deals p:nth-child(2){
+    color: #eeff00;
+    font-weight: 600;
+}
+
+a button{
+    text-decoration: none;
+    color: #fff;
+    background-color: #8f87fa;
+    padding: 10px;
+    margin: 10px;
+    transform: translateX(90%);
+    border: 1px solid #8f87fa;
+    cursor: pointer;    
+}
+
+a button:hover{
+    background: #fff;
+    color: #8f87fa;
+    transition: 0.5s;
+}
+
+.esaver{
+    background: lightgreen;
+}
+
+.disney{
+    background: lightblue;
+}
+
+.brand{
+    background: plum;
+}
+
+.diary{
+    background: lightcoral;
+}
+.esaver-circle{
+    background: lightgreen;
+}
+
+.disney-circle{
+    background: lightblue;
+}
+.brand-circle{
+    background: plum;
+}
+
+.diary-circle{
+    background: lightcoral;
+}
+
+@media (max-width: 900px) {
+    .offer-deal h1{
+        font-size: 25px;
+    }        
+
+    .offer-deal-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 1%;
+    }
+
+    .offer-container{
+        transition: transform 0.5s ease-in-out;
+    }
+}

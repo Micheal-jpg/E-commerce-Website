@@ -1,0 +1,61 @@
+.mobile-phone-about{
+    margin: 0 5%;
+    padding: 3%;
+}
+
+.mobile-phone-about h1{
+    font-size: 40px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.mobile-redmi{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 80px;
+}
+
+.mobile-redmi-price img{
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.mobile-redmi-price a button{
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    background: #0c0c6d6c;
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+.mobile-redmi-price a button:hover{
+    background: #0c0cb9;
+    color: #fff;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.mobile-redmi-info p{
+    font-size: 20px;
+    color: #fff;
+}
+
+@media(max-width : 900px){
+
+    .mobile-phone-about h1{
+        margin: 0 30px;
+    }
+
+    .mobile-redmi{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .mobile-redmi-info p{
+        font-size: 25px;       
+    }
+}

@@ -4,32 +4,285 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>FAQS</title>
+    <link rel="stylesheet" href="otherstyles/home.css">
+    <link rel="stylesheet" href="otherstyles/faq.css">
+    <script src="https://kit.fontawesome.com/be4521645b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/head-logo.png" type="image/x-icon">
+    <title>Apni Dukaan</title>
 </head>
 <body>
-    <nav>
-        <div class="ecommerce-nav">
-            <img src="images/ApniDukan.png" class="logo" width="80px" >
-        </div>
-         <div class="nav-home">
-        <ul>
+  <a href="#" class="back-to-top" id="backToTopBtn"><img src="images/up-arrow.png" width="25px"></a>
+  <nav>
+    <div class="ecommerce-nav">
+      <a href="index.html"><img src="images/ApniDukan.png" class="logo" width="80px"></a>
+        <!-- Menu Icon for Smaller Devices -->
+        <button class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <div class="nav-home" id="nav-home">
+        <ul id="nav-links">
+            <!-- All existing links here -->
             <li><a href="home.html">Home</a></li>
             <li><a href="offers.html">Offers</a></li>
             <li><a href="Contact Us.html">Contact Us</a></li>
             <li><a href="Login.html">Login</a></li>
             <li><a href="About Us.html">About Us</a></li>
             <li><a href="FAQ.html">FAQ</a></li>
-            <li><a href="Category.html">Category</a></li>
+            <li class="category-dropdown">
+                <a href="Category.html" class="dropdown-toggle">
+                    Category
+                    <img src="images/angle-small-down.png" width="15px" alt="dropdown arrow">
+                </a>
+                <!-- Dropdown content -->
+                <div class="category-nav-Dropdown">
+                    <ul>
+                        <li><a class="categoryDropDown" href="Mobile.html">Mobile</a></li>
+                        <li><a class="categoryDropDown" href="Books.html">Books</a></li>
+                        <li><a class="categoryDropDown" href="404.html">TV/Appliances</a></li>
+                        <li><a class="categoryDropDown" href="404.html">Furniture</a></li>
+                        <li><a class="categoryDropDown" href="404.html">Baby/Kids</a></li>
+                        <li><a class="categoryDropDown" href="404.html">Stationery</a></li>
+                        <hr>
+                        <li><a class="categoryDropDown" href="Login.html">Login/Signup</a></li>
+                    </ul>
+                </div>
+            </li>
             <li><a href="My Cart.html">My Cart</a></li>
         </ul>
-        <div class="ecommerce-search">  
+        <div class="ecommerce-search">
             <input type="text" placeholder="Search">
             <button type="submit" class="nav-btn">Search</button>
         </div>
     </div>
-   
 </nav>
 
-    <script src="script.js"></script>
+<!-------------------------- FAQ Section ----------------------->
+<div class="faq-container">
+  <div class="faq-head">
+    <h1>Frequently Asked Questions</h1>
+  </div>
+
+  <div class="faq-content">
+    <div class="faq-question">
+      <span class="arrow"><img src="images/caret-down.png" width="19px"></span>
+      <p>Can I take the shipment after opening and checking the contents inside?</p>
+      <span class="icon-toggle plus">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>As per company policy, a shipment can't be opened before delivery, but you 
+        can accept the shipment and get in touch with us later in case you have any concerns.</p>
+    </div>
+  </div>
+
+  <div class="faq-content">
+    <div class="faq-question">
+      <span class="arrow"><img src="images/caret-down.png" width="19px"></span>
+      <p>What's your return and refund policy?</p>
+      <span class="icon-toggle plus">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>You can raise a request to return your items with these simple steps:<br>
+
+        1. Log into your ApniDukaan account<br>
+        
+        2. Go to My Orders<br>
+        
+        3. Click on 'Return' against the item you wish to return or exchange<br>
+        
+        4. Fill in the details and raise a return request<br>
+        
+        Once you raise a request, you'll get an email and SMS confirming that your 
+        request is being processed. Based on the item, your request may be automatically 
+        approved or you may be contacted for more details. If the request is approved, 
+        the item will be picked up after which you will get a replacement or refund. You 
+        can also track the status of your return request instantly from the 'My Orders' 
+        section of your ApniDukaan account.</p>
+    </div>
+  </div>
+
+  <div class="faq-content">
+    <div class="faq-question">
+      <span class="arrow"><img src="images/caret-down.png" width="19px"></span>
+      <p>What's your exchange policy?</p>
+      <span class="icon-toggle plus">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>Visit My Orders to check the status of your replacement. In most locations, 
+        the replacement item is delivered to you at the time of pick-up. In all other 
+        areas, the replacement is initiated after the originally delivered item is picked 
+        up. Please check the SMS & email we send you for your replacement request for more 
+        details.</p>
+    </div>
+  </div>
+
+  <div class="faq-content">
+    <div class="faq-question">
+      <span class="arrow"><img src="images/caret-down.png" width="19px"></span>
+      <p>How do I qualify for free shipping?</p>
+      <span class="icon-toggle plus">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>Whenever you order products of a total amount greater than ₦30000, 
+        you get free shipping on the products.</p>
+    </div>
+  </div>
+
+  <div class="faq-content">
+    <div class="faq-question">
+      <span class="arrow"><img src="images/caret-down.png" width="19px"></span>
+      <p>The delivery of my order is delayed. What should I do?</p>
+      <span class="icon-toggle plus">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>On the rare occasion that your order is delayed, please check your 
+        email & messages for updates. A new delivery timeframe will be shared 
+        with you and you can also track its status by visiting My Orders.</p>
+    </div>
+  </div>
+
+  <div class="faq-content">
+    <div class="faq-question">
+      <span class="arrow"><img src="images/caret-down.png" width="19px"></span>
+      <p>Why can't I get some items shipped to my location?</p>
+      <span class="icon-toggle plus">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>Some sellers prefer not to ship to certain locations due to the cost involved 
+        and this is entirely at their discretion. You can check with your pincode on the
+         product page to see any other sellers ship to your location.</p>
+    </div>
+  </div>
+
+  <div class="faq-content">
+    <div class="faq-question">
+      <span class="arrow"><img src="images/caret-down.png" width="19px"></span>
+      <p>What payment methods do you accept?</p>
+      <span class="icon-toggle plus">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>We accept all known payment methods like Pay on Delivery, Credit and Debit Cards, 
+        Net Banking, UPI and even gift cards.</p>
+    </div>
+  </div>
+
+  <div class="faq-content">
+    <div class="faq-question">
+      <span class="arrow"><img src="images/caret-down.png" width="19px"></span>
+      <p>How do I know my order has been confirmed?</p>
+      <span class="icon-toggle plus">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>An e-mail & SMS will be sent once you've successfully placed your order. We'll also
+        let you know as soon as the seller ships the item(s) to you along with the tracking 
+        number(s) for your shipment(s). You can track your orders from the 'My Orders' section 
+        on your ApniDukaan account.</p>
+    </div>
+  </div>
+
+  <div class="faq-content">
+    <div class="faq-question">
+      <span class="arrow"><img src="images/caret-down.png" width="19px"></span>
+      <p>I didn't get the Gift Card I ordered for. What should I do?</p>
+      <span class="icon-toggle plus">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>Please check your inbox and spam folder for the Gift Card.
+
+        If you don't find the card in spite of this, you can get the card details from your Apni dukaan account. To do this,<br>
+        
+        1. Visit your Orders<br>
+        2. Go to the order for the Gift Card<br>
+        3. Click on resend Gift Card details</p>
+    </div>
+  </div>
+
+  <div class="faq-content">
+    <div class="faq-question">
+      <span class="arrow"><img src="images/caret-down.png" width="19px"></span>
+      <p>What if my order arrives damaged?</p>
+      <span class="icon-toggle plus">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>If your order arrives in a broken and damaged condition you can always place 
+        a replacement for the same if it's available. Also, you could raise a return 
+        request for your order.</p>
+    </div>
+  </div>
+
+</div>
+
+  <!-------------------------------------------- Footer -------------------------------------------->
+  <div class="footer-container">
+    <div class="footer-section">
+    <div class="footer-layer">
+      <div class="footer-info">
+        <h1>GET TO KNOW US</h1>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Press Release</p>
+        <p>Apni Dukaan Cares</p>
+        <p>Our Partners</p>
+      </div>
+    </div>
+
+    <div class="footer-layer">
+      <div class="footer-info">
+        <h1>LET US HELP YOU</h1>
+        <p>Payments</p>
+        <p>Shipping</p>
+        <p>Cancellation and Returns</p>
+        <p>Report an issue</p>
+        <p>Contact us</p>
+      </div>
+    </div>
+
+    <div class="footer-layer">
+      <div class="footer-info">
+        <h1>PRIVACY POLICY</h1>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Press Release</p>
+        <p>Terms and Conditions</p>
+        <p>Refund and Return</p>
+      </div>
+    </div>
+
+    <div class="footer-layer">
+      <div class="footer-info">
+        <h1>MAKE MONEY WITH</h1>
+        <p>Sell on Apni Dukaan</p>
+        <p>Advertise your products</p>
+        <p>Press Release</p>
+        <p>Become our partner</p>
+        <p>Join our mission</p>
+      </div>
+    </div>
+
+    <div class="footer-layer">
+      <div class="footer-info social">
+        <h1>CONNECT WITH US</h1>
+        <p><img src="images/facebook.png" width="25px">
+        <span><a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">Facebook</a></span>
+        </p>
+        <p><img src="images/twitter.png" width="25px">
+        <span><a href="https://x.com/" target="_blank">Twitter</a></span>
+        </p>
+        <p><img src="images/instagram.png" width="25px">
+        <span><a href="https://www.instagram.com/" target="_blank">Instagram</a></span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>Copyright Since 2024 Under ApniDukaan.com 
+    | Adeyanju Micheal</p>
+  </div>
+  </div>
+
+  
+  
+  <script src="script.js"></script>
 </body>
 </html>

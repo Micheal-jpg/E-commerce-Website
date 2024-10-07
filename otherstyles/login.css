@@ -1,0 +1,178 @@
+body{
+    background: #3aa9ce;
+}
+
+.login-container{
+    display: flex;
+    background: linear-gradient(to right, #fff 50%, #047196 50%);
+    padding: 80px;
+    width: 550px;
+    margin: 70px 350px;
+    box-shadow: 10px 10px 15px  rgba(0, 0, 0, 0.8);
+    border-right: 3px solid #03485f;
+    border-bottom: 3px solid #03485f;
+}
+
+.login-left-col h1{
+    text-align: center;
+    font-size: 20px;
+    color: #047196;
+}
+
+#form label{
+    color: #7e7e7e;
+    font-size: 18px;
+}
+
+#form input{
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #969191;
+}
+
+#form a{
+    font-size: 18px;
+    margin-left: -20px;
+}
+
+#form button{
+    padding: 10px;
+    color: #fff;
+    background: #05a6db;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: 10px ;
+}
+
+#form button:hover{
+    background: #03485f;
+    border: 0;
+}
+
+#login-right-col{
+    margin: 0 100px;
+    padding: 0 10px;
+}
+
+#login-right-col p{
+    font-size: 18px;
+    width: 300px;
+    color: #fff;
+    font-weight: 800;
+}
+
+#login-right-col p:nth-child(3){
+    font-weight: 100;
+}
+
+#login-right-col button{
+    padding: 10px;
+    color: #fff;
+    background: #05a6db;
+    border: 1px solid #05a6db;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login-right-col button:hover{
+    background: #03485f;
+    border: 0;
+}
+
+.back-to-home{
+    margin: 0 630px ;
+    width: 200px;
+}
+
+.back-to-home a button{
+    padding: 13px;
+    font-size: 20px;
+    background: #05a6db;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px  rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.back-to-home a button:hover{
+    background: #03485f;
+    transition: 0.2s;
+}
+
+@media (max-width: 900px) {
+    body {
+         
+      margin: 25px 0; 
+      overflow: hidden;
+    }
+  
+    .login-container {
+      flex-direction: column; /* Stack the columns vertically */
+      padding: 40px;
+      width: 50%;
+      margin: 20px auto; /* Center align and adjust top margin */
+      box-shadow: none;
+      background: #222;
+    }
+  
+    .login-left-col {
+      margin-bottom: 30px; /* Add spacing between the stacked elements */
+      text-align: center; /* Center the elements inside the left column */
+    }
+
+    #form label{
+        color: #fff;
+    }
+  
+    #form input {
+      width: 90%; /* Reduce the width of the inputs to fit smaller screens */
+      margin: 10px auto; /* Center the input fields */
+    }
+  
+    #form a {
+      font-size: 16px;
+      display: inline-block; /* Ensure the link doesn't overlap other content */
+    }
+  
+    #form button {
+      width: 95%;
+      margin: 10px auto; /* Adjust margin for better alignment */
+    }
+  
+    #login-right-col {
+      text-align: center; /* Center the right column elements */
+      margin: 0;
+      padding: 20px 0;
+    }
+  
+    #login-right-col img {
+      width: 80px; /* Reduce the image size for smaller screens */
+    }
+  
+    #login-right-col p {
+      width: 100%; /* Reduce width to fit smaller screens */
+      margin: 0 auto; /* Center the text */
+      font-size: 20px;
+    }
+  
+    #login-right-col button {
+      width: 95%;
+      margin: 20px auto;
+    }
+  
+    .back-to-home {
+      margin: 0 auto; /* Center the "Back To Home" button */
+      width: 90%;
+      text-align: center; /* Align the button to the center */
+    }
+  
+    .back-to-home a button {
+      width: 75%; /* Make the button fit the container */
+    }
+  }
+  

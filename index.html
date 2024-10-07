@@ -3,37 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Website</title>
+    <link rel="icon" href="images/head-logo.png" type="image/x-icon">
+    <title>Apni Dukaan</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <script src="https://kit.fontawesome.com/be4521645b.js" crossorigin="anonymous"></script>
+    <link
+     rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+<body id="index">
     <nav>
-            <div class="ecommerce-nav">
-                <img src="images/ApniDukan.png" class="logo" width="80px" >
-            </div>
-             <div class="nav-home">
-            <ul>
-               <li><a href="home.html">Home</a></li>
-               <li><a href="offers.html">Offers</a></li>
-               <li><a href="Contact Us.html">Contact Us</a></li>
-               <li><a href="Login.html">Login</a></li>
-               <li><a href="About Us.html">About Us</a></li>
-               <li><a href="FAQ.html">FAQ</a></li>
-               <li><a href="Category.html">Category</a></li>
-               <li><a href="My Cart.html">My Cart</a></li>
+        <div class="ecommerce-nav">
+            <img src="images/ApniDukan.png" class="logo" width="80px">
+            <!-- Menu Icon for Smaller Devices -->
+            <button class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="nav-home" id="nav-home">
+            <ul id="nav-links">
+                <!-- All existing links here -->
+                <li><a href="home.html">Home</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li class="category-dropdown">
+                    <a href="Category.html" class="dropdown-toggle">
+                        Category
+                        <img src="images/angle-small-down.png" width="15px" alt="dropdown arrow">
+                    </a>
+                    <!-- Dropdown content -->
+                    <div class="category-nav-Dropdown">
+                        <ul>
+                            <li><a class="categoryDropDown" href="Mobile.html">Mobile</a></li>
+                            <li><a class="categoryDropDown" href="Books.html">Books</a></li>
+                            <li><a class="categoryDropDown" href="404.html">TV/Appliances</a></li>
+                            <li><a class="categoryDropDown" href="404.html">Furniture</a></li>
+                            <li><a class="categoryDropDown" href="404.html">Baby/Kids</a></li>
+                            <li><a class="categoryDropDown" href="404.html">Stationery</a></li>
+                            <hr>
+                            <li><a class="categoryDropDown" href="Login.html">Login/Signup</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="My Cart.html">My Cart</a></li>
             </ul>
-            <div class="ecommerce-search">  
+            <div class="ecommerce-search">
                 <input type="text" placeholder="Search">
-                <button type="submit" class="nav-btn">Search</button>
+                <a href=""><button type="submit" class="nav-btn">Search</button></a>
             </div>
         </div>
-       
     </nav>
+        
+<!------------------------------------------ Swiper Section -------------------------------------------->
 
     <div class="ecommerce-home">
-        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/home_img1.jpg" class="home-img1">
+                    <div class="text-section text-section2">
+                        <h1 class="heavy">HEAVY DISCOUNT</h1>
+                        <p>GET UPTO 30% OFF ON CLOTHING, SHOES,<br> ACCESSORIES</p>
+                        <button type="submit" class="btn">Get Started</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/home_img2.jpg" alt="">
+                    <div class="text-section">
+                        <h1>LATEST GADGETS</h1>
+                        <p>GET THE FEATURES OF THE LATEST GADGETS
+                            <br>ONLINE AT LOW PRICES
+                        </p>
+                        <button type="submit" class="btn">Get Started</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/home_img3.jpg" alt="Slide 3">
+                    <div class="text-section">
+                        <h1>TRENDING SHOES</h1>
+                        <p>A SNEAKER THAT DEMAND ATTENTION BY<br>
+                            DENYYING CONVENTION
+                        </p>
+                        <button type="submit" class="btn">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+     var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+    //   autoplay:{
+    //     delay:3000,
+    //     },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
