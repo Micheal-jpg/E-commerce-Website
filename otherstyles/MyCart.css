@@ -130,6 +130,7 @@
 
 .sponsor h1{
     font-size: 20px;
+    font-weight: 3000;
 }
 
 .sponsor-info{
@@ -179,7 +180,7 @@
 
     .cart-layer{
         width: 350px;
-        margin: 0 ;
+        margin: 0 10px;
     }
 
     .cart-list{
@@ -220,5 +221,9 @@
         width: 350px;
         margin: 20px auto;
         height: 550px;
+    }
+    
+    .right-col-sum h1{
+        font-weight: 300;
     }
 }
